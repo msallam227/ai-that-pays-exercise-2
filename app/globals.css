@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Wedding Color Palette */
+  --color-blush-50: #fdf6f8;
+  --color-blush-100: #faedf1;
+  --color-blush-200: #f5d9e3;
+  --color-blush-300: #edbdcc;
+  --color-blush-400: #e094aa;
+  --color-blush-500: #d4708d;
+  --color-blush-600: #c05070;
+
+  --color-champagne-50: #fdfaf4;
+  --color-champagne-100: #faf3e4;
+  --color-champagne-200: #f4e4c4;
+  --color-champagne-300: #ecd0a0;
+  --color-champagne-400: #e0b978;
+  --color-champagne-500: #d4a054;
+  --color-champagne-600: #b8852e;
+
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e8f0e8;
+  --color-sage-200: #cfe0cf;
+  --color-sage-300: #a9c7a9;
+  --color-sage-400: #7eaa7e;
+  --color-sage-500: #5c8f5c;
+  --color-sage-600: #447044;
+
+  --color-gold-50: #fdfbf2;
+  --color-gold-100: #faf5e0;
+  --color-gold-200: #f3e9b8;
+  --color-gold-300: #e8d588;
+  --color-gold-400: #d9be54;
+  --color-gold-500: #c9a428;
+  --color-gold-600: #a88418;
+
+  --color-cream: #fdfaf6;
+  --color-ivory: #f9f5ee;
+  --color-pearl: #f5f0e8;
+
+  --font-sans: var(--font-lato);
+  --font-display: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #fdfaf6;
+  --foreground: #3d2c2c;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Georgia', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #faf3e4;
+}
+::-webkit-scrollbar-thumb {
+  background: #edbdcc;
+  border-radius: 3px;
 }
